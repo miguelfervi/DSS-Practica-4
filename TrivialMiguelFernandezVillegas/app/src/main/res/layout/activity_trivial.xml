@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dss.miguel.trivialmiguelfernandezvillegas.TrivialActivity"
+    android:background="#FFFFFF">
+
+    <!--
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout> -->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:weightSum="10">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="¿Que es la dipepsia?"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_question"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="#000"
+            android:background="#BBDEFB"
+            android:id="@+id/text_question"/>
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_progressbar"
+            android:layout_weight="1"
+            android:layout_below="@+id/text_question"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:progressDrawable="@drawable/progress_bar_states"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:indeterminate="false"
+                android:max="150"
+                android:minHeight="20dp"
+                android:minWidth="200dp"
+                android:progress="1" />
+
+            <TextView
+                android:id="@+id/progressbar_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:textAlignment="center"
+                android:layout_marginTop="1.5dp"
+                android:layout_centerHorizontal="true"
+                android:text="15"
+                android:layout_alignLeft="@+id/progressbar"
+                android:layout_alignTop="@+id/progressbar"
+                android:layout_alignRight="@+id/progressbar"
+                android:layout_alignBottom="@+id/progressbar" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/text_option1"
+            android:layout_below="@+id/layout_progressbar"
+            android:text="Alergia a le pepsi"
+            android:textSize="@dimen/text_size_answer"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BBDEFB"
+            />
+
+        <Button
+            android:id="@+id/text_option2"
+            android:layout_below="@+id/text_option1"
+            android:text="Alergia a le pepsi"
+            android:textSize="@dimen/text_size_answer"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#BBDEFB"
+            />
+
+
+        <Button
+            android:id="@+id/text_option3"
+            android:layout_below="@+id/text_option2"
+            android:text="Alergia a le pepsi"
+            android:textSize="@dimen/text_size_answer"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#BBDEFB"
+            />
+
+        <Button
+            android:id="@+id/text_option4"
+            android:layout_below="@+id/text_option3"
+            android:text="Alergia a le pepsi"
+            android:textSize="@dimen/text_size_answer"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#BBDEFB"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="3" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/back_menu"
+        android:text="Volver \nal Menú"
+        android:textColor="#000"
+        android:textSize="@dimen/text_size_answer"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        />
+
+    <Button
+        android:id="@+id/next_question"
+        android:text="Siguiente"
+        android:textSize="@dimen/text_size_answer"
+        android:textColor="#000"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+
+        />
+
+</android.support.design.widget.CoordinatorLayout>

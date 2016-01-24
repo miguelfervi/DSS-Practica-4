@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dss.miguel.trivialmiguelfernandezvillegas.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#FFFFFF">
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginBottom="50dp"
+              android:background="@drawable/custom_btn">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/coin"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/coins"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:text="0"
+                    android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+ -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/init_banner"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/trivial" />
+
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_below="@id/init_banner"
+        android:text="Jugar"
+        android:textSize="@dimen/text_size_question"
+        android:textColor="#000"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#BBDEFB"
+        />
+
+    <Button
+        android:id="@+id/button_stats"
+        android:layout_below="@id/button_start"
+        android:text="Estadísticas"
+        android:textSize="@dimen/text_size_question"
+        android:textColor="#000"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#BBDEFB"
+        />
+
+    <!--<Button
+        android:id="@+id/button_options"
+        android:layout_below="@id/init_banner"
+        android:text="Opciones"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/custom_btn"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />-->
+
+    <Button
+        android:id="@+id/button_muro"
+        android:layout_below="@id/button_stats"
+        android:text="OTROS JUEGOS"
+        android:textColor="#000"
+        android:textSize="@dimen/text_size_question"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#BBDEFB"
+
+        />
+
+
+</LinearLayout>
